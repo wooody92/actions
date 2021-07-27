@@ -11,7 +11,7 @@ const octokit = new Octokit({
 
 octokit.request('POST /repos/{owner}/{repo}/issues/{issue_number}/labels', {
     owner: 'wooody92',
-    repo: 'antions',
+    repo: 'actions',
     issue_number: core.getInput('issue_number'),
     labels: [
       'bug'
